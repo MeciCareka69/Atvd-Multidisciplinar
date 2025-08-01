@@ -1,18 +1,137 @@
-body{
-    background-color: rgb(255, 255, 255);
-
-}
-
-.titulo{
-    color: aliceblue;
-    text-align: center;
-    font-size: 2em;
+/* Reset básico */
+* {
     margin: 0;
-}
-
-.topo{
-    background-color: #000000;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Corpo da página */
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f2f4f8;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Cabeçalho */
+  header {
+    background-color: #004d99;
     color: white;
-    padding: 20px;
+    padding: 2rem 1rem;
     text-align: center;
-}
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  header p {
+    font-size: 1.1rem;
+  }
+  
+  /* Navegação */
+  nav {
+    background-color: #003366;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #ffcc00;
+  }
+  
+  /* Conteúdo principal */
+  main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  
+  /* Seções */
+  section {
+    background-color: white;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+  }
+  
+  section h2 {
+    color: #004d99;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+  }
+  
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  ul li {
+    background-color: #e6f2ff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-left: 5px solid #004d99;
+    border-radius: 4px;
+  }
+  
+  /* Artigos (notícias) */
+  article {
+    border-left: 4px solid #2196f3;
+    padding-left: 1rem;
+    margin-bottom: 1.5rem;
+    background-color: #f0f8ff;
+    padding: 1rem;
+    border-radius: 4px;
+  }
+  
+  article h3 {
+    color: #003366;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Destaques com <strong> */
+  strong {
+    color: #0066cc;
+  }
+  
+  /* Rodapé */
+  footer {
+    background-color: #004d99;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin-top: 2rem;
+  }
+  
+  /* Link no rodapé */
+  footer a {
+    color: #ffcc00;
+    text-decoration: none;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 600px) {
+    header h1 {
+      font-size: 1.8rem;
+    }
+  
+    nav a {
+      display: block;
+      margin: 10px 0;
+    }
+  
+    section {
+      padding: 1.5rem 1rem;
+    }
+  }
+  
